@@ -2,3 +2,56 @@
     margin: 0;
     padding: 0;
 }
+
+main {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#current-view {
+    display: grid;
+    grid-template-areas: 'location-search unit-switch'
+    'weather-icon weather-icon'
+    'temperature current-range'
+    'current-stats current-stats';
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+
+    width: 60%;
+    height: 80vh;
+}
+
+#location-search {
+    grid-area: location-search;
+    background-color: red;
+}
+
+#unit-switch {
+    grid-area: unit-switch;
+    background-color: orange;
+}
+
+#current-weather-icon {
+    grid-area: weather-icon;
+    background-color: yellow;
+}
+
+#temperature {
+    grid-area: temperature;
+    background-color: green;
+}
+
+#current-range {
+    grid-area: current-range;
+    background-color: blue;
+}
+
+#current-stats {
+    grid-area: current-stats;
+    background-color: purple;
+}
